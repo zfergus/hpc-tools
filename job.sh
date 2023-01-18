@@ -22,7 +22,7 @@ OUTPUT_ROOT=$SCRATCH/$PROJECT_NAME/results
 OUTPUT_DIR="$OUTPUT_ROOT/${SCRIPT_REL%.*}"
 
 # 2. Change this to the directory containing the executable
-BIN_DIR=$SCRATCH/$PROJECT_NAME/build/release/${PROJECT_NAME}_bin
+BIN_DIR=$SCRATCH/$PROJECT_NAME/build/release
 BIN="${PROJECT_NAME}_bin"
 
 # Run job
