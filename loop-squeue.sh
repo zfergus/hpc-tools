@@ -32,7 +32,7 @@ print_queue (){
     print_hline '┌' '┬' '┐' | pad_lines_white_space
     echo "${COMPLETE_QUEUE}" | head -n 1 | pad_lines
     print_hline '│' '┼' '│' | pad_lines_white_space
-    squeue --format="${SQUEUE_FORMAT}" --me \
+    squeue --format="${SQUEUE_FORMAT}" --me --sort=+i \
         | grep "RUNNING" \
         | head -n $(python -c "print($(tput lines) - ${NUM_LINES_TAKEN})") \
         | pad_lines
