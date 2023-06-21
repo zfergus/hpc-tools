@@ -126,7 +126,7 @@ autoload -U compinit && compinit -u
 
 ###############################################################################
 # Load modules
-module load cmake/3.22.2 python/intel/3.8.6 rclone/1.53.3 gcc/10.2.0 \
+module load cmake/3.22.2 python/intel/3.8.6 rclone/1.60.1 gcc/10.2.0 \
     mathematica/12.1.1 hdf5/intel/1.12.0 paraview/5.11.0
 
 export CC=${GCC_ROOT}/bin/gcc
